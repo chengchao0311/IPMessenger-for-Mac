@@ -256,6 +256,8 @@ static NSRecursiveLock*		userListColsLock	= nil;
 		[to addObject:[users objectAtIndex:index]];
 		index = [userSet indexGreaterThanIndex:index];
 	}
+    
+    NSLog(@"%d", index);
 	// 送信情報構築
 	info = [SendMessage messageWithMessage:msg
 							   attachments:attachments

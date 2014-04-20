@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6232C20E19017AC200D57876 /* MemeberListWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6232C20D19017AC200D57876 /* MemeberListWindow.xib */; };
+		6232C21519017D8200D57876 /* MemberListController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6232C21319017D8200D57876 /* MemberListController.h */; };
+		6232C21619017D8200D57876 /* MemberListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6232C21419017D8200D57876 /* MemberListController.m */; };
 		F7196E9013842A5300BE747B /* LogConvertController.h in Headers */ = {isa = PBXBuildFile; fileRef = F7196E8E13842A5300BE747B /* LogConvertController.h */; };
 		F7196E9113842A5300BE747B /* LogConvertController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7196E8F13842A5300BE747B /* LogConvertController.m */; };
 		F7196FE211C40B5300BA4491 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F79BE0AB11C159E10088D0A5 /* Sparkle.framework */; };
@@ -105,6 +108,9 @@
 
 /* Begin PBXFileReference section */
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6232C20D19017AC200D57876 /* MemeberListWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemeberListWindow.xib; sourceTree = "<group>"; };
+		6232C21319017D8200D57876 /* MemberListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberListController.h; sourceTree = "<group>"; };
+		6232C21419017D8200D57876 /* MemberListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListController.m; sourceTree = "<group>"; };
 		6417D5BB02EA9BF400A80003 /* ReceiveMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiveMessageView.h; sourceTree = "<group>"; };
 		6417D5BC02EA9BF400A80003 /* ReceiveMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiveMessageView.m; sourceTree = "<group>"; };
 		6426F20302C59B8700A80003 /* RefuseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefuseInfo.h; sourceTree = "<group>"; };
@@ -340,6 +346,8 @@
 				64A845D002EB14CD00A80003 /* SendMessageView.m */,
 				F77D69621397A95B00BA58D6 /* SendHeaderView.h */,
 				F77D69631397A95B00BA58D6 /* SendHeaderView.m */,
+				6232C21319017D8200D57876 /* MemberListController.h */,
+				6232C21419017D8200D57876 /* MemberListController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -409,6 +417,7 @@
 				F7E66CCC1361ABC80014B3D7 /* SendWindow.nib */,
 				F7E66CC11361ABBA0014B3D7 /* MainMenu.nib */,
 				F794E5B913855BCC003FB780 /* LogConvertDialog.xib */,
+				6232C20D19017AC200D57876 /* MemeberListWindow.xib */,
 			);
 			name = Nibs;
 			sourceTree = "<group>";
@@ -435,6 +444,7 @@
 				F734531B0C454622001D5375 /* AppControl.h in Headers */,
 				F734531C0C454622001D5375 /* NoticeControl.h in Headers */,
 				F734531D0C454622001D5375 /* MessageCenter.h in Headers */,
+				6232C21519017D8200D57876 /* MemberListController.h in Headers */,
 				F734531E0C454622001D5375 /* UserInfo.h in Headers */,
 				F734531F0C454622001D5375 /* UserManager.h in Headers */,
 				F73453200C454622001D5375 /* ReceiveControl.h in Headers */,
@@ -525,6 +535,7 @@
 				F73453420C454622001D5375 /* AltLog.icns in Resources */,
 				F73453430C454622001D5375 /* Attach.icns in Resources */,
 				F73453440C454622001D5375 /* AttachS.tiff in Resources */,
+				6232C20E19017AC200D57876 /* MemeberListWindow.xib in Resources */,
 				F743AB1311C10B7A003B098E /* dsa_pub.pem in Resources */,
 				F7E66CA71361A9120014B3D7 /* menu_alternate.png in Resources */,
 				F7E66CA81361A9120014B3D7 /* menu_highlight.png in Resources */,
@@ -576,6 +587,7 @@
 				F7BC02BE1382522900EDBC81 /* LogConverter.m in Sources */,
 				F7196E9113842A5300BE747B /* LogConvertController.m in Sources */,
 				F77D69651397A95B00BA58D6 /* SendHeaderView.m in Sources */,
+				6232C21619017D8200D57876 /* MemberListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,7 +700,7 @@
 				INFOPLIST_FILE = resource/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = IPMessenger;
@@ -713,7 +725,7 @@
 				INFOPLIST_FILE = resource/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = IPMessenger;
 				SECTORDER_FLAGS = "";

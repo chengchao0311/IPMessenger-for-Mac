@@ -20,6 +20,7 @@
 #import "LogConvertController.h"
 #import "UserInfo.h"
 #import "DebugLog.h"
+#import "MemberListController.h"
 
 #define ABSENCE_OFF_MENU_TAG	1000
 #define ABSENCE_ITEM_MENU_TAG	2000
@@ -54,6 +55,7 @@
 		iconSmallAbsence		= [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"menu_normal" ofType:@"png"]];
 		iconSmallAbsenceReverse	= [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"menu_highlight" ofType:@"png"]];
 		iconSmallAlaternate		= [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"menu_alternate" ofType:@"png"]];
+        [[MemberListController alloc] initWindow];
 	}
 
 	return self;
@@ -82,7 +84,11 @@
 		activatedFlag = -1;		// アクティベートで新規ウィンドウが開いてしまうのを抑止
 		[NSApp activateIgnoringOtherApps:YES];
 	}
-	[[SendControl alloc] initWithSendMessage:nil recvMessage:nil];
+	//[[SendControl alloc] initWithSendMessage:nil recvMessage:nil];
+    
+
+    
+
 }
 
 // メッセージ受信時処理

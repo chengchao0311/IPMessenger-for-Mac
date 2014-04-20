@@ -124,11 +124,11 @@
 		[self release];
 		return nil;
 	}
-	if (strtol(tok, NULL, 10) != IPMSG_VERSION) {
-		ERR(@"msg:version invalid(%d)", strtol(tok, NULL, 10));
-		[self release];
-		return nil;
-	}
+//	if (strtol(tok, NULL, 10) != IPMSG_VERSION) {
+//		ERR(@"msg:version invalid(%d)", strtol(tok, NULL, 10));
+//		[self release];
+//		return nil;
+//	}
 	TRC(@"\tversion       =%d", IPMSG_VERSION);
 
 	// パケット番号
