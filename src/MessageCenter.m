@@ -628,6 +628,7 @@ static void _DynamicStoreCallback(SCDynamicStoreRef	store,
 		ERR(@"recvFrom error(sock=%d)", sockUDP);
 		return;
 	}
+    
 	TRC(@"recv %u bytes", len);
 
 	// 解析
@@ -649,6 +650,7 @@ static void _DynamicStoreCallback(SCDynamicStoreRef	store,
 
 	command		= [msg command];
 	fromUser	= [msg fromUser];
+    NSLog(@"%@", fromUser.userName);
 	from		= &addr;
 	packetNo	= msg.packetNo;
 	appendix	= [msg appendix];

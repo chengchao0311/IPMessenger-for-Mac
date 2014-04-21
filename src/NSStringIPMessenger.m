@@ -20,7 +20,11 @@
 // IPMessenger用送受信文字列変換（C文字列→NSString)
 - (id)initWithSJISString:(const char*)cString
 {
-	return [self initWithCString:cString encoding:NSShiftJISStringEncoding];
+    NSStringEncoding encoder;
+    NSString *string = [self initWithCString:cString encoding:encoder=-2147482063];
+    NSLog(@"string = %@", string);
+	return string;
+    
 }
 
 // IPMessenger用送受信文字列変換（NSString→C文字列)
