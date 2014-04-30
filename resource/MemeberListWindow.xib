@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment defaultVersion="1070" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
+=======
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1070" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MemberListController">
             <connections>
                 <outlet property="chatPanel" destination="kQf-RK-zkD" id="LLU-SI-PuM"/>
+<<<<<<< HEAD
                 <outlet property="editingTextView" destination="vGa-Ad-uni" id="hik-rM-9L8"/>
                 <outlet property="memberCountLabel" destination="3z0-90-GVB" id="vrY-3h-gq2"/>
                 <outlet property="sendedTextView" destination="6YW-SL-L0d" id="y7M-dl-Php"/>
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                 <outlet property="tableView" destination="76D-av-0l7" id="QBB-Ss-F8e"/>
                 <outlet property="window" destination="vmQ-CN-gLb" id="0G3-m5-aYI"/>
             </connections>
@@ -20,6 +30,7 @@
         <customObject id="l2z-bm-Gs2" customClass="MemberListController"/>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="vmQ-CN-gLb" userLabel="MemberListWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+<<<<<<< HEAD
             <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="815" y="248" width="327" height="694"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
@@ -38,6 +49,24 @@
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="jrf-C6-r03" id="76D-av-0l7">
                                     <rect key="frame" x="0.0" y="0.0" width="303" height="622"/>
+=======
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="109" y="132" width="321" height="480"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <view key="contentView" id="EZ0-G6-mmO">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="480"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="0zc-sd-sWd">
+                        <rect key="frame" x="11" y="13" width="305" height="422"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <clipView key="contentView" id="hnN-88-dLi">
+                            <rect key="frame" x="1" y="17" width="303" height="404"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="jrf-C6-r03" id="76D-av-0l7">
+                                    <rect key="frame" x="0.0" y="0.0" width="303" height="404"/>
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -49,7 +78,11 @@
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
                                             </tableHeaderCell>
+<<<<<<< HEAD
                                             <textFieldCell key="dataCell" lineBreakMode="truncatingTail" alignment="left" title="Text Cell" id="Ooq-M7-MY6">
+=======
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="Ooq-M7-MY6">
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -62,7 +95,11 @@
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
                                             </tableHeaderCell>
+<<<<<<< HEAD
                                             <textFieldCell key="dataCell" lineBreakMode="truncatingTail" alignment="left" title="Text Cell" id="1N4-Iy-UG6">
+=======
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="1N4-Iy-UG6">
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -88,7 +125,11 @@
                         </tableHeaderView>
                     </scrollView>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="ZbR-1H-tdC">
+<<<<<<< HEAD
                         <rect key="frame" x="82" y="662" width="162" height="17"/>
+=======
+                        <rect key="frame" x="73" y="450" width="175" height="17"/>
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Memeber Count : 0/123" id="3z0-90-GVB">
                             <font key="font" metaFont="system"/>
@@ -96,6 +137,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+<<<<<<< HEAD
                     <button verticalHuggingPriority="750" id="yCN-4V-zNZ">
                         <rect key="frame" x="240" y="651" width="82" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -107,6 +149,8 @@
                             <action selector="refrechMemberListAction:" target="-2" id="LiQ-VV-pQB"/>
                         </connections>
                     </button>
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                 </subviews>
             </view>
             <connections>
@@ -118,8 +162,11 @@
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="120" y="65" width="276" height="378"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+<<<<<<< HEAD
             <value key="minSize" type="size" width="276" height="378"/>
             <value key="maxSize" type="size" width="276" height="378"/>
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
             <view key="contentView" id="1HL-xO-jRJ">
                 <rect key="frame" x="0.0" y="0.0" width="276" height="378"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -160,7 +207,11 @@
                             <rect key="frame" x="1" y="1" width="250" height="62"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
+<<<<<<< HEAD
                                 <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="vGa-Ad-uni" customClass="SendMessageView">
+=======
+                                <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="vGa-Ad-uni">
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                     <rect key="frame" x="0.0" y="0.0" width="253" height="62"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -188,12 +239,16 @@
                         <buttonCell key="cell" type="push" title="Send" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PWs-gl-bvy">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+<<<<<<< HEAD
                             <string key="keyEquivalent">s</string>
                             <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                         </buttonCell>
                         <connections>
                             <action selector="sendMeaageAction:" target="-2" id="UhW-3V-15n"/>
                         </connections>
+=======
+                        </buttonCell>
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                     </button>
                 </subviews>
             </view>

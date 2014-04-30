@@ -22,7 +22,10 @@
 #import "WindowManager.h"
 #import "ReceiveControl.h"
 #import "DebugLog.h"
+<<<<<<< HEAD
 #import "MemberListController.h"
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 
 #define _SEARCH_MENUITEM_TAG_USER		(0)
 #define _SEARCH_MENUITEM_TAG_GROUP		(1)
@@ -49,6 +52,7 @@ static NSRecursiveLock*		userListColsLock	= nil;
  * 初期化／解放
  *----------------------------------------------------------------------------*/
 
+<<<<<<< HEAD
 - (id)init{
     self = [super init];
     //[[MemberListController alloc] initWindow];
@@ -65,6 +69,12 @@ static NSRecursiveLock*		userListColsLock	= nil;
 // 初期化
 - (id)initWithSendMessage:(NSString*)msg recvMessage:(RecvMessage*)recv {
 	self = [super init];
+=======
+// 初期化
+- (id)initWithSendMessage:(NSString*)msg recvMessage:(RecvMessage*)recv {
+	self = [super init];
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	if (userListColumns == nil) {
 		userListColumns		= [[NSMutableDictionary alloc] init];
 	}
@@ -79,6 +89,7 @@ static NSRecursiveLock*		userListColsLock	= nil;
 	attachmentsDic		= [[NSMutableDictionary alloc] init];
 
 	// Nibファイルロード
+<<<<<<< HEAD
 	if (![NSBundle loadNibNamed:@"MemeberListWindow" owner:self]) {
 		[self autorelease];
 
@@ -87,6 +98,13 @@ static NSRecursiveLock*		userListColsLock	= nil;
   }
     
     
+=======
+	if (![NSBundle loadNibNamed:@"SendWindow.nib" owner:self]) {
+		[self autorelease];
+		return nil;
+	}
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	// 引用メッセージの設定
 	if (msg) {
 		if ([msg length] > 0) {
@@ -136,7 +154,10 @@ static NSRecursiveLock*		userListColsLock	= nil;
 	[window makeFirstResponder:messageArea];
 
 	return self;
+<<<<<<< HEAD
  
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 }
 
 // 解放
@@ -834,5 +855,8 @@ static NSRecursiveLock*		userListColsLock	= nil;
 	[self release];
 }
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 @end

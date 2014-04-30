@@ -13,7 +13,10 @@
 #import "RecvMessage.h"
 #import "SendMessage.h"
 #import "DebugLog.h"
+<<<<<<< HEAD
 #import "Message.h"
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 
 // 定数定義
 static NSString* _HEAD_START	= @"=====================================\n";
@@ -105,6 +108,7 @@ static NSString* _HEAD_END		= @"-------------------------------------\n";
 - (void)writeRecvLog:(RecvMessage*)info withRange:(NSRange)range
 {
 	// メッセージ編集
+<<<<<<< HEAD
     //	NSMutableString* msg = [NSMutableString string];
     //	[msg appendString:_HEAD_START];
     //	[msg appendString:@" From: "];
@@ -139,6 +143,39 @@ static NSString* _HEAD_END		= @"-------------------------------------\n";
 
 	// ログ出力
     //	[self writeLog:msg];
+=======
+	NSMutableString* msg = [NSMutableString string];
+	[msg appendString:_HEAD_START];
+	[msg appendString:@" From: "];
+	[msg appendString:[[info fromUser] summaryString]];
+	[msg appendString:@"\n  at "];
+	[msg appendString:[_dateFormat stringFromDate:info.receiveDate]];
+	if ([info broadcast]) {
+		[msg appendString:_sTypeBroadcast];
+	}
+	if ([info absence]) {
+		[msg appendString:_sTypeAutoReturn];
+	}
+	if ([info multicast]) {
+		[msg appendString:_sTypeMulticast];
+	}
+	if ([info locked]) {
+		[msg appendString:_sTypeLocked];
+	} else if ([info sealed]) {
+		[msg appendString:_sTypeSealed];
+	}
+	[msg appendString:@"\n"];
+	[msg appendString:_HEAD_END];
+	if (range.length > 0) {
+		[msg appendString:[[info appendix] substringWithRange:range]];
+	} else {
+		[msg appendString:[info appendix]];
+	}
+	[msg appendString:@"\n\n"];
+
+	// ログ出力
+	[self writeLog:msg];
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 }
 
 // 送信ログ出力
@@ -147,11 +184,15 @@ static NSString* _HEAD_END		= @"-------------------------------------\n";
 	// メッセージ編集
 	NSMutableString* msg = [NSMutableString string];
 	[msg appendString:_HEAD_START];
+<<<<<<< HEAD
     NSManagedObjectContext *context = [[NSApp delegate] managedObjectContext];
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	for (UserInfo* user in to) {
 		[msg appendString:@" To: "];
 		[msg appendString:[user summaryString]];
 		[msg appendString:@"\n"];
+<<<<<<< HEAD
         
         NSManagedObjectContext *message = [NSEntityDescription insertNewObjectForEntityForName:@"Message" inManagedObjectContext:context];
         [message setValue:@"self" forKey:@"from"];
@@ -163,6 +204,8 @@ static NSString* _HEAD_END		= @"-------------------------------------\n";
             NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
         }
         
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	}
 	[msg appendString:@"  at "];
 	[msg appendString:[_dateFormat stringFromDate:[NSCalendarDate date]]];
@@ -181,10 +224,16 @@ static NSString* _HEAD_END		= @"-------------------------------------\n";
 	[msg appendString:_HEAD_END];
 	[msg appendString:info.message];
 	[msg appendString:@"\n\n"];
+<<<<<<< HEAD
     
 	// ログ出力
 	[self writeLog:msg];
 
+=======
+
+	// ログ出力
+	[self writeLog:msg];
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 }
 
 // メッセージ出力（内部用）

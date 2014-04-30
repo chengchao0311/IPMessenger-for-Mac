@@ -9,6 +9,7 @@
 #import "MemberListController.h"
 #import "UserManager.h"
 #import "UserInfo.h"
+<<<<<<< HEAD
 #import "RecvMessage.h"
 #import "SendMessage.h"
 #import "Config.h"
@@ -17,6 +18,8 @@
 #import "WindowManager.h"
 #import "MessageView.h"
 #import "PrefControl.h"
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 
 //NSString* const kIPMsgUserInfoUserNamePropertyIdentifier	= @"UserName";
 //NSString* const kIPMsgUserInfoGroupNamePropertyIdentifier	= @"GroupName";
@@ -30,6 +33,7 @@
 @synthesize window;
 @synthesize users;
 @synthesize chatPanel;
+<<<<<<< HEAD
 @synthesize memberCountLabel;
 @synthesize messageViewArray;
 @synthesize sendedTextView;
@@ -46,6 +50,8 @@
     
     
 }
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 
 -(void)initWindow{
     
@@ -67,6 +73,7 @@
 			   name:NOTICE_USER_LIST_CHANGED
 			 object:nil];
     
+<<<<<<< HEAD
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recvMessage:) name:@"RecvMessage" object:nil];
     messageViewArray = [[NSMutableArray alloc] init];
     [memberCountLabel setStringValue:[NSString stringWithFormat:@"Memeber Count : %i/%i",[users count],[users count]]];
@@ -75,12 +82,22 @@
 
 #pragma mark - TableView
 
+=======
+}
+
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 - (int)numberOfRowsInTableView:(NSTableView*)aTableView {
 	return users.count;
 }
 
 
+<<<<<<< HEAD
 - (id)tableView:(NSTableView*)aTableView objectValueForTableColumn:(NSTableColumn*)aTableColumn
+=======
+- (id)tableView:(NSTableView*)aTableView
+objectValueForTableColumn:(NSTableColumn*)aTableColumn
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
             row:(int)rowIndex {
 	if (aTableView == tableView) {
 		UserInfo* info = [users objectAtIndex:rowIndex];
@@ -92,9 +109,13 @@
 		} else {
 		}
         
+<<<<<<< HEAD
 	}
     
     return nil;
+=======
+	} 	return nil;
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 }
 
 // ソートの変更
@@ -104,6 +125,10 @@
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 // ユーザ一覧変更時処理
 - (void)userListChanged:(NSNotification*)aNotification
 {
@@ -115,13 +140,17 @@
 	[users sortUsingDescriptors:[tableView sortDescriptors]];
 	[tableView reloadData];
 	[tableView deselectAll:self];
+<<<<<<< HEAD
     [memberCountLabel setStringValue:[NSString stringWithFormat:@"Memeber Count : %i/%i",[users count],[users count]]];
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 }
 
 
 - (void)doubleClick:(id)object {
     NSInteger rowIndex = [tableView clickedRow];
     UserInfo* info = [users objectAtIndex:rowIndex];
+<<<<<<< HEAD
     //显示聊天窗口, 如果存在,如果不存在
     BOOL isExist = NO;
     for (int i = 0; i<[messageViewArray count]; i++) {
@@ -174,6 +203,15 @@
     
     
 }
+=======
+    [chatPanel setTitle:info.userName];
+    [chatPanel setIsVisible:YES];
+}
+
+
+
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 
 
 @end

@@ -37,9 +37,12 @@
 
 @property(readonly)	NSInteger			packetNo;		// パケット番号
 @property(readonly)	NSDate*				receiveDate;	// 受信日時
+<<<<<<< HEAD
 @property(assign)   UserInfo*           fromUser;
 @property(assign)   NSString*           appendix;
 @property(assign)   NSMutableArray*     attachments;
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 //@property(readonly)	struct sockaddr_in	fromAddress;	// 送信元アドレス
 
 // ファクトリ

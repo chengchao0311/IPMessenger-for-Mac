@@ -46,6 +46,7 @@
 		[self autorelease];
 		return nil;
 	}
+<<<<<<< HEAD
     
 //    NSArray*	wins	= [NSApp orderedWindows];
 //	int			i;
@@ -56,6 +57,8 @@
 //			break;
 //		}
 //	}
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 
 	// ログ出力
 	if (config.standardLogEnabled) {

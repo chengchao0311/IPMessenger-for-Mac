@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment version="1050" defaultVersion="1070" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
+=======
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1050" defaultVersion="1050" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="ReceiveControl">
@@ -41,7 +48,11 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="198" y="431" width="310" height="250"/>
+<<<<<<< HEAD
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+=======
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
             <value key="minSize" type="size" width="310" height="250"/>
             <view key="contentView" id="10">
                 <rect key="frame" x="0.0" y="0.0" width="310" height="250"/>
@@ -174,7 +185,11 @@ DQ
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="344" y="584" width="350" height="140"/>
+<<<<<<< HEAD
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+=======
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
             <value key="minSize" type="size" width="350" height="140"/>
             <value key="maxSize" type="size" width="350" height="140"/>
             <view key="contentView" id="42">
@@ -260,10 +275,17 @@ Gw
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <clipView key="contentView" id="b58-fD-f6b">
                         <rect key="frame" x="1" y="17" width="178" height="201"/>
+<<<<<<< HEAD
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" autosaveColumns="NO" rowHeight="14" headerView="216" id="145">
                                 <rect key="frame" x="0.0" y="0.0" width="178" height="201"/>
+=======
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" autosaveColumns="NO" rowHeight="14" headerView="216" id="145">
+                                <rect key="frame" x="0.0" y="0.0" width="178.5" height="201"/>
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                 <autoresizingMask key="autoresizingMask"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -296,11 +318,19 @@ Gw
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                     <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="214">
+<<<<<<< HEAD
                         <rect key="frame" x="179" y="17" width="15" height="201"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                     <tableHeaderView key="headerView" id="216">
                         <rect key="frame" x="0.0" y="0.0" width="178" height="17"/>
+=======
+                        <rect key="frame" x="179" y="17" width="15" height="193"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <tableHeaderView key="headerView" id="216">
+                        <rect key="frame" x="0.0" y="0.0" width="178.5" height="17"/>
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                         <autoresizingMask key="autoresizingMask"/>
                     </tableHeaderView>
                 </scrollView>
@@ -321,7 +351,11 @@ Gw
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="272" y="568" width="383" height="156"/>
+<<<<<<< HEAD
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+=======
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
             <value key="minSize" type="size" width="213" height="107"/>
             <view key="contentView" id="128">
                 <rect key="frame" x="0.0" y="0.0" width="383" height="156"/>

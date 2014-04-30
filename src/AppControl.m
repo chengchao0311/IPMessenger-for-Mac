@@ -21,8 +21,11 @@
 #import "UserInfo.h"
 #import "DebugLog.h"
 #import "MemberListController.h"
+<<<<<<< HEAD
 #import "Message.h"
 #import "UserManager.h"
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 
 #define ABSENCE_OFF_MENU_TAG	1000
 #define ABSENCE_ITEM_MENU_TAG	2000
@@ -32,10 +35,13 @@
  *============================================================================*/
 
 @implementation AppControl
+<<<<<<< HEAD
 @synthesize managedObjectContext;
 @synthesize persistentStoreCoordinator;
 @synthesize managedObjectModel;
 
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 
 /*----------------------------------------------------------------------------*
  * 初期化／解放
@@ -63,12 +69,19 @@
 		iconSmallAlaternate		= [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"menu_alternate" ofType:@"png"]];
         [[MemberListController alloc] initWindow];
 	}
+<<<<<<< HEAD
     
 	return self;
 }
 
 
 
+=======
+
+	return self;
+}
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 // 解放
 - (void)dealloc
 {
@@ -92,6 +105,7 @@
 		activatedFlag = -1;		// アクティベートで新規ウィンドウが開いてしまうのを抑止
 		[NSApp activateIgnoringOtherApps:YES];
 	}
+<<<<<<< HEAD
 //	[[SendControl alloc] initWithSendMessage:nil recvMessage:nil];
     
     NSArray*	wins	= [NSApp orderedWindows];
@@ -103,6 +117,13 @@
 			break;
 		}
 	}
+=======
+	//[[SendControl alloc] initWithSendMessage:nil recvMessage:nil];
+    
+
+    
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 }
 
 // メッセージ受信時処理
@@ -118,6 +139,7 @@
 	[config.receiveSound play];
 	// 受信ウィンドウ生成（まだ表示しない）
 	recv = [[ReceiveControl alloc] initWithRecvMessage:msg];
+<<<<<<< HEAD
     [recv showWindow];
 //	if (config.nonPopup) {
 //		if ((config.nonPopupWhenAbsence && config.inAbsence) ||
@@ -153,6 +175,42 @@
 //		[NSApp activateIgnoringOtherApps:YES];
 //	}
 	//[recv showWindow];
+=======
+	if (config.nonPopup) {
+		if ((config.nonPopupWhenAbsence && config.inAbsence) ||
+			(!config.nonPopupWhenAbsence)) {
+			// ノンポップアップの場合受信キューに追加
+			[receiveQueueLock lock];
+			[receiveQueue addObject:recv];
+			[receiveQueueLock unlock];
+			switch (config.iconBoundModeInNonPopup) {
+			case IPMSG_BOUND_ONECE:
+				[NSApp requestUserAttention:NSInformationalRequest];
+				break;
+			case IPMSG_BOUND_REPEAT:
+				[NSApp requestUserAttention:NSCriticalRequest];
+				break;
+			case IPMSG_BOUND_NONE:
+			default:
+				break;
+			}
+			if (!iconToggleTimer) {
+				// アイコントグル開始
+				iconToggleState	= YES;
+				iconToggleTimer = [NSTimer scheduledTimerWithTimeInterval:0.5
+																   target:self
+																 selector:@selector(toggleIcon:)
+																 userInfo:nil
+																  repeats:YES];
+			}
+			return;
+		}
+	}
+	if (![NSApp isActive]) {
+		[NSApp activateIgnoringOtherApps:YES];
+	}
+	[recv showWindow];
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 }
 
 // すべてのウィンドウを閉じる
@@ -198,7 +256,11 @@
 	int			num		= [config numberOfAbsences];
 	NSInteger	index	= config.absenceIndex;
 	int			i;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	// 不在モード解除とその下のセパレータ以外を一旦削除
 	for (i = [absenceMenu numberOfItems] - 1; i > 1 ; i--) {
 		[absenceMenu removeItemAtIndex:i];
@@ -229,13 +291,21 @@
 	Config*		config	= [Config sharedConfig];
 	NSInteger	oldIdx	= config.absenceIndex;
 	int			newIdx;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	if ([sender tag] == ABSENCE_OFF_MENU_TAG) {
 		newIdx = -2;
 	} else {
 		newIdx = [sender tag] - ABSENCE_ITEM_MENU_TAG;
 	}
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	// 現在選択されている不在メニューのチェックを消す
 	if (oldIdx == -1) {
 		oldIdx = -2;
@@ -243,12 +313,20 @@
 	[[absenceMenu				itemAtIndex:oldIdx + 2] setState:NSOffState];
 	[[absenceMenuForDock		itemAtIndex:oldIdx + 2] setState:NSOffState];
 	[[absenceMenuForStatusBar	itemAtIndex:oldIdx + 2] setState:NSOffState];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	// 選択された項目にチェックを入れる
 	[[absenceMenu				itemAtIndex:newIdx + 2] setState:NSOnState];
 	[[absenceMenuForDock		itemAtIndex:newIdx + 2] setState:NSOnState];
 	[[absenceMenuForStatusBar	itemAtIndex:newIdx + 2] setState:NSOnState];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	// 選択された項目によってアイコンを変更する
 	if (newIdx < 0) {
 		[NSApp setApplicationIconImage:iconNormal];
@@ -257,9 +335,15 @@
 		[NSApp setApplicationIconImage:iconAbsence];
 		[statusBarItem setImage:iconSmallAbsence];
 	}
+<<<<<<< HEAD
     
 	[sender setState:NSOnState];
     
+=======
+
+	[sender setState:NSOnState];
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	config.absenceIndex = newIdx;
 	[[MessageCenter sharedCenter] broadcastAbsence];
 }
@@ -327,7 +411,11 @@
 	[sendWindowListLogonMenuItem setState:![config sendWindowUserListColumnHidden:kIPMsgUserInfoLogOnNamePropertyIdentifier]];
 	[sendWindowListVersionMenuItem setState:![config sendWindowUserListColumnHidden:kIPMsgUserInfoVersionPropertyIdentifer]];
 	[self buildAbsenceMenu];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	// ステータスバー
 	if(config.useStatusBar){
 		[self initStatusBar];
@@ -338,6 +426,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification*)aNotification
 {
 	TRC(@"Enter");
+<<<<<<< HEAD
     
 	// 画面位置計算時の乱数初期化
 	srand(time(NULL));
@@ -345,6 +434,15 @@
 	// フラグ初期化
 	activatedFlag = -1;
     
+=======
+
+	// 画面位置計算時の乱数初期化
+	srand(time(NULL));
+
+	// フラグ初期化
+	activatedFlag = -1;
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	// ログファイルのUTF-8チェック
 	TRC(@"Start log check");
 	Config* config = [Config sharedConfig];
@@ -357,6 +455,7 @@
 		[self checkLogConversion:NO path:config.alternateLogFile];
 	}
 	TRC(@"Finish log check");
+<<<<<<< HEAD
     
 	// ENTRYパケットのブロードキャスト
 	TRC(@"Broadcast entry");
@@ -366,6 +465,17 @@
 	TRC(@"Start attachment server");
 	[AttachmentServer sharedServer];
     
+=======
+
+	// ENTRYパケットのブロードキャスト
+	TRC(@"Broadcast entry");
+	[[MessageCenter sharedCenter] broadcastEntry];
+
+	// 添付ファイルサーバの起動
+	TRC(@"Start attachment server");
+	[AttachmentServer sharedServer];
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	TRC(@"Complete");
 }
 
@@ -386,11 +496,19 @@
 	while ((win = (NSWindow*)[e nextObject])) {
 		if ([win isVisible] && [[win delegate] isKindOfClass:[ReceiveControl class]]) {
 			int ret = NSRunCriticalAlertPanel(
+<<<<<<< HEAD
                                               NSLocalizedString(@"ShutDown.Confirm1.Title", nil),
                                               NSLocalizedString(@"ShutDown.Confirm1.Msg", nil),
                                               NSLocalizedString(@"ShutDown.Confirm1.OK", nil),
                                               NSLocalizedString(@"ShutDown.Confirm1.Cancel", nil),
                                               nil);
+=======
+								NSLocalizedString(@"ShutDown.Confirm1.Title", nil),
+								NSLocalizedString(@"ShutDown.Confirm1.Msg", nil),
+								NSLocalizedString(@"ShutDown.Confirm1.OK", nil),
+								NSLocalizedString(@"ShutDown.Confirm1.Cancel", nil),
+								nil);
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 			if (ret == NSAlertAlternateReturn) {
 				[win makeKeyAndOrderFront:self];
 				// 終了キャンセル
@@ -403,11 +521,19 @@
 	[receiveQueueLock lock];
 	if ([receiveQueue count] > 0) {
 		int ret = NSRunCriticalAlertPanel(
+<<<<<<< HEAD
                                           NSLocalizedString(@"ShutDown.Confirm2.Title", nil),
                                           NSLocalizedString(@"ShutDown.Confirm2.Msg", nil),
                                           NSLocalizedString(@"ShutDown.Confirm2.OK", nil),
                                           NSLocalizedString(@"ShutDown.Confirm2.Other", nil),
                                           NSLocalizedString(@"ShutDown.Confirm2.Cancel", nil));
+=======
+								NSLocalizedString(@"ShutDown.Confirm2.Title", nil),
+								NSLocalizedString(@"ShutDown.Confirm2.Msg", nil),
+								NSLocalizedString(@"ShutDown.Confirm2.OK", nil),
+								NSLocalizedString(@"ShutDown.Confirm2.Other", nil),
+								NSLocalizedString(@"ShutDown.Confirm2.Cancel", nil));
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 		if (ret == NSAlertOtherReturn) {
 			[receiveQueueLock unlock];
 			// 終了キャンセル
@@ -430,16 +556,27 @@
 	[[MessageCenter sharedCenter] broadcastExit];
 	// 添付ファイルサーバの終了
 	[[AttachmentServer sharedServer] shutdownServer];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	// ステータスバー消去
 	if ([Config sharedConfig].useStatusBar && (statusBarItem != nil)) {
 		// [self removeStatusBar]を呼ぶと落ちる（なぜ？）
 		[[NSStatusBar systemStatusBar] removeStatusItem:statusBarItem];
 	}
+<<<<<<< HEAD
     
 	// 初期設定の保存
 	[[Config sharedConfig] save];
     
+=======
+
+	// 初期設定の保存
+	[[Config sharedConfig] save];
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 }
 
 // アプリアクティベート
@@ -453,7 +590,11 @@
 	DBG(@"drop file=%@", fileName);
 	if (lastDockDraggedDate && lastDockDraggedWindow) {
 		if ([lastDockDraggedDate timeIntervalSinceNow] > -0.5) {
+<<<<<<< HEAD
 //			[lastDockDraggedWindow appendAttachmentByPath:fileName];
+=======
+			[lastDockDraggedWindow appendAttachmentByPath:fileName];
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 		} else {
 			[lastDockDraggedDate release];
 			lastDockDraggedDate		= nil;
@@ -461,9 +602,14 @@
 		}
 	}
 	if (!lastDockDraggedDate) {
+<<<<<<< HEAD
 //		lastDockDraggedWindow = [[SendControl alloc] initWithSendMessage:nil recvMessage:nil];
         lastDockDraggedWindow = [[SendControl alloc] init];
 //		[lastDockDraggedWindow appendAttachmentByPath:fileName];
+=======
+		lastDockDraggedWindow = [[SendControl alloc] initWithSendMessage:nil recvMessage:nil];
+		[lastDockDraggedWindow appendAttachmentByPath:fileName];
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 		lastDockDraggedDate = [[NSDate alloc] init];
 	}
 	return YES;
@@ -506,6 +652,7 @@
 	}
 	[receiveQueueLock unlock];
 	// 新規送信ウィンドウのオープン
+<<<<<<< HEAD
     
     //DBG(@"#window = %d", [[NSApp windows] count]);
 	wins = [NSApp windows];
@@ -514,6 +661,16 @@
         //		[win orderFront:self];
         //		if ([[win delegate] isKindOfClass:[ReceiveControl class]] ||
         //			[[win delegate] isKindOfClass:[SendControl class]]) {
+=======
+
+//DBG(@"#window = %d", [[NSApp windows] count]);
+	wins = [NSApp windows];
+	for (i = 0; i < [wins count]; i++) {
+		NSWindow* win = [wins objectAtIndex:i];
+//		[win orderFront:self];
+//		if ([[win delegate] isKindOfClass:[ReceiveControl class]] ||
+//			[[win delegate] isKindOfClass:[SendControl class]]) {
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 		if ([win isVisible]) {
 			noWin = NO;
 			break;
@@ -538,8 +695,13 @@
 	NSImage* img1;
 	NSImage* img2;
 	iconToggleState = !iconToggleState;
+<<<<<<< HEAD
     
     
+=======
+
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	if ([Config sharedConfig].inAbsence) {
 		img1 = (iconToggleState) ? iconAbsence : iconAbsenceReverse;
 		img2 = (iconToggleState) ? iconSmallAbsence : iconSmallAbsenceReverse;
@@ -547,7 +709,11 @@
 		img1 = (iconToggleState) ? iconNormal : iconNormalReverse;
 		img2 = (iconToggleState) ? iconSmallNormal : iconSmallNormalReverse;
 	}
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	// ステータスバーアイコン
 	if ([Config sharedConfig].useStatusBar) {
 		if (statusBarItem == nil) {
@@ -564,6 +730,7 @@
 	Config*			config	= [Config sharedConfig];
 	NSString*		name	= aStdLog ? @"StdLog" : @"AltLog";
 	LogConverter*	converter;
+<<<<<<< HEAD
     
 	TRC(@"Start check %@ logfile", name);
     
@@ -571,11 +738,24 @@
 	converter.name	= name;
 	converter.path	= [aPath stringByExpandingTildeInPath];
     
+=======
+
+	TRC(@"Start check %@ logfile", name);
+
+	converter		= [LogConverter converter];
+	converter.name	= name;
+	converter.path	= [aPath stringByExpandingTildeInPath];
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	if (![converter needConversion]) {
 		TRC(@"%@ is up to date (UTF-8) -> end", name);
 		return;
 	}
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	// ユーザへの変換確認
 	WRN(@"%@ need to convert (SJIS->UTF-8) -> user confirm", name);
 	NSString*	s		= [NSString stringWithFormat:@"Log.Conv.%@", name];
@@ -584,7 +764,11 @@
 	NSString*	message	= NSLocalizedString(@"Log.Conv.Message", nil);
 	NSString*	ok		= NSLocalizedString(@"Log.Conv.OK", nil);
 	NSString*	cancel	= NSLocalizedString(@"Log.Conv.Cancel", nil);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	NSAlert*	alert	= [[NSAlert alloc] init];
 	[alert setMessageText:[NSString stringWithFormat:title, logName]];
 	[alert setInformativeText:[NSString stringWithFormat:message, logName]];
@@ -596,13 +780,21 @@
 	if (ret == NSAlertFirstButtonReturn) {
 		// OKを選んだら変換
 		TRC(@"User confirmed %@ conversion", name);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 		// 進捗ダイアログ作成
 		LogConvertController* dialog = [[LogConvertController alloc] init];
 		dialog.filePath	= converter.path;
 		converter.delegate	= dialog;
 		[dialog showWindow:self];
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 		// 変換処理
 		TRC(@"LogConvert start(%@)", name);
 		BOOL result = [converter convertToUTF8:[dialog window]];
@@ -618,7 +810,11 @@
 			message	= NSLocalizedString(@"Log.ConvFail.Message", nil);
 			ok		= NSLocalizedString(@"Log.ConvFail.OK", nil);
 			alert = [NSAlert alertWithMessageText:title
+<<<<<<< HEAD
 									defaultButton:ok
+=======
+									defaultButton:ok 
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 								  alternateButton:nil
 									  otherButton:nil
 						informativeTextWithFormat:message];
@@ -630,7 +826,11 @@
 		ERR(@"User denied %@ conversion. -> backup", name);
 		[converter backup];
 	}
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	if ([converter.backupPath length] > 0) {
 		title	= NSLocalizedString(@"Log.Backup.Title", nil);
 		ok		= NSLocalizedString(@"Log.Backup.OK", nil);
@@ -644,6 +844,7 @@
 	}
 }
 
+<<<<<<< HEAD
 #pragma -Core Data
 - (NSManagedObjectContext *) managedObjectContext {
     if (managedObjectContext != nil) {
@@ -699,4 +900,6 @@
     }
 }
 
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 @end

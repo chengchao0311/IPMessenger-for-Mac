@@ -46,8 +46,11 @@
 
 // 初期化
 - (id)initWithSendMessage:(NSString*)msg recvMessage:(RecvMessage*)recv;
+<<<<<<< HEAD
 - (id)init;
 
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 
 // ハンドラ
 - (IBAction)buttonPressed:(id)sender;

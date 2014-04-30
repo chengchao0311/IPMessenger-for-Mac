@@ -29,9 +29,12 @@
 @synthesize packetNo	= _packetNo;
 @synthesize receiveDate	= _date;
 @synthesize fromAddress	= _address;
+<<<<<<< HEAD
 @synthesize fromUser;
 @synthesize appendix;
 @synthesize attachments;
+=======
+>>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 
 /*============================================================================*
  * ファクトリ
