@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment version="1050" defaultVersion="1070" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
-=======
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
-    <dependencies>
-        <deployment version="1050" defaultVersion="1070" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="SendControl">
@@ -32,11 +25,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="726" y="147" width="310" height="570"/>
-<<<<<<< HEAD
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
-=======
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
             <value key="minSize" type="size" width="310" height="250"/>
             <view key="contentView" id="6">
                 <rect key="frame" x="0.0" y="0.0" width="310" height="570"/>
@@ -47,11 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <subviews>
                             <searchField verticalHuggingPriority="750" id="244">
-<<<<<<< HEAD
                                 <rect key="frame" x="148" y="5" width="151.99999932933724" height="19"/>
-=======
-                                <rect key="frame" x="148" y="5" width="152" height="19"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
                                 <searchFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Search Users" bezelStyle="round" id="245">
                                     <font key="font" metaFont="smallSystem"/>
@@ -95,11 +80,7 @@
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                                 </tableHeaderCell>
-<<<<<<< HEAD
                                                                 <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" alignment="left" id="207">
-=======
-                                                                <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" id="207">
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                                                     <font key="font" metaFont="cellTitle"/>
                                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -224,10 +205,7 @@
             <size key="minContentSize" width="180" height="50"/>
             <size key="maxContentSize" width="600" height="400"/>
             <connections>
-<<<<<<< HEAD
                 <binding destination="mvM-rC-nQQ" name="visible" keyPath="values" id="GHh-Zf-aGk"/>
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                 <outlet property="contentView" destination="104" id="109"/>
                 <outlet property="parentWindow" destination="5" id="110"/>
             </connections>
@@ -353,10 +331,7 @@
                 <outlet property="delegate" destination="-2" id="271"/>
             </connections>
         </menu>
-<<<<<<< HEAD
         <userDefaultsController representsSharedInstance="YES" id="mvM-rC-nQQ"/>
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
     </objects>
     <resources>
         <image name="NSAddTemplate" width="8" height="8"/>

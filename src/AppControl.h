@@ -7,10 +7,8 @@
  *============================================================================*/
 
 #import <Cocoa/Cocoa.h>
-<<<<<<< HEAD
 #import "UserInfo.h"
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
+
 
 @class RecvMessage;
 @class SendControl;
@@ -34,22 +32,15 @@
 	IBOutlet NSMenuItem*	absenceOffMenuItemForDock;		// Dock用不在解除メニュー項目
 	IBOutlet NSMenu*		absenceMenuForStatusBar;		// ステータスバー用不在メニュー
 	IBOutlet NSMenuItem*	absenceOffMenuItemForStatusBar;	// ステータスバー用不在解除メニュー項目
-<<<<<<< HEAD
     
 	IBOutlet NSMenuItem*	showNonPopupMenuItem;			// ノンポップアップ表示メニュー項目
     
-=======
-
-	IBOutlet NSMenuItem*	showNonPopupMenuItem;			// ノンポップアップ表示メニュー項目
-
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	IBOutlet NSMenuItem*	sendWindowListUserMenuItem;		// 送信ウィンドウユーザ一覧ユーザメニュー項目
 	IBOutlet NSMenuItem*	sendWindowListGroupMenuItem;	// 送信ウィンドウユーザ一覧グループメニュー項目
 	IBOutlet NSMenuItem*	sendWindowListHostMenuItem;		// 送信ウィンドウユーザ一覧ホストメニュー項目
 	IBOutlet NSMenuItem*	sendWindowListIPAddressMenuItem;// 送信ウィンドウユーザ一覧IPアドレスメニュー項目
 	IBOutlet NSMenuItem*	sendWindowListLogonMenuItem;	// 送信ウィンドウユーザ一覧ログオンメニュー項目
 	IBOutlet NSMenuItem*	sendWindowListVersionMenuItem;	// 送信ウィンドウユーザ一覧バージョンメニュー項目
-<<<<<<< HEAD
     
 	IBOutlet NSMenu*		statusBarMenu;					// ステータスバー用のメニュー
 	NSStatusItem*			statusBarItem;					// ステータスアイテムのインスタンス
@@ -62,20 +53,6 @@
 	NSTimer*				iconToggleTimer;				// アイコントグル用タイマー
 	BOOL					iconToggleState;				// アイコントグル状態（YES:通常/NO:リバース)
     
-=======
-
-	IBOutlet NSMenu*		statusBarMenu;					// ステータスバー用のメニュー
-	NSStatusItem*			statusBarItem;					// ステータスアイテムのインスタンス
-
-	BOOL					activatedFlag;					// アプリケーションアクティベートフラグ
-
-	NSMutableArray*			receiveQueue;					// 受信メッセージキュー
-	NSLock*					receiveQueueLock;				// 受信メッセージキュー排他ロック
-
-	NSTimer*				iconToggleTimer;				// アイコントグル用タイマー
-	BOOL					iconToggleState;				// アイコントグル状態（YES:通常/NO:リバース)
-
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	NSImage*				iconNormal;						// 通常時アプリアイコン
 	NSImage*				iconNormalReverse;				// 通常時アプリアイコン（反転）
 	NSImage*				iconAbsence;					// 不在時アプリアイコン
@@ -85,7 +62,6 @@
 	NSImage*				iconSmallAbsence;				// 不在時アプリスモールアイコン
 	NSImage*				iconSmallAbsenceReverse;		// 不在時アプリスモールアイコン（反転）
 	NSImage*				iconSmallAlaternate;			// 選択時アプリスモールアイコン
-<<<<<<< HEAD
     
 	NSDate*					lastDockDraggedDate;			// 前回Dockドラッグ受付時刻
 	SendControl*			lastDockDraggedWindow;			// 前回Dockドラッグ時生成ウィンドウ
@@ -101,14 +77,6 @@
 
 // メッセージ送受信／ウィンドウ関連処理
 
-=======
-
-	NSDate*					lastDockDraggedDate;			// 前回Dockドラッグ受付時刻
-	SendControl*			lastDockDraggedWindow;			// 前回Dockドラッグ時生成ウィンドウ
-}
-
-// メッセージ送受信／ウィンドウ関連処理
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 - (IBAction)newMessage:(id)sender;
 - (void)receiveMessage:(RecvMessage*)msg;
 - (IBAction)closeAllWindows:(id)sender;
@@ -131,10 +99,8 @@
 - (IBAction)openLog:(id)sender;
 
 - (void)checkLogConversion:(BOOL)aStdLog path:(NSString*)aPath;
-<<<<<<< HEAD
 - (NSString *)applicationDocumentsDirectory;
 - (UserInfo *)getSelfInfo;
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
+
 
 @end

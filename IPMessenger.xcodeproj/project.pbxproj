@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		3C1445AA1906558E00BE1895 /* Message.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1445A51906558E00BE1895 /* Message.h */; };
 		3C1445AB1906558E00BE1895 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1445A61906558E00BE1895 /* Message.m */; };
 		3C1445AC1906558E00BE1895 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C1445A71906558E00BE1895 /* Model.xcdatamodeld */; };
@@ -19,11 +18,6 @@
 		6232C21619017D8200D57876 /* MemberListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6232C21419017D8200D57876 /* MemberListController.m */; };
 		E825D779190E503A00828A95 /* AttachTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E825D777190E503A00828A95 /* AttachTableViewDelegate.h */; };
 		E825D77A190E503A00828A95 /* AttachTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E825D778190E503A00828A95 /* AttachTableViewDelegate.m */; };
-=======
-		6232C20E19017AC200D57876 /* MemeberListWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6232C20D19017AC200D57876 /* MemeberListWindow.xib */; };
-		6232C21519017D8200D57876 /* MemberListController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6232C21319017D8200D57876 /* MemberListController.h */; };
-		6232C21619017D8200D57876 /* MemberListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6232C21419017D8200D57876 /* MemberListController.m */; };
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 		F7196E9013842A5300BE747B /* LogConvertController.h in Headers */ = {isa = PBXBuildFile; fileRef = F7196E8E13842A5300BE747B /* LogConvertController.h */; };
 		F7196E9113842A5300BE747B /* LogConvertController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7196E8F13842A5300BE747B /* LogConvertController.m */; };
 		F7196FE211C40B5300BA4491 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F79BE0AB11C159E10088D0A5 /* Sparkle.framework */; };
@@ -122,7 +116,6 @@
 
 /* Begin PBXFileReference section */
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		3C1445A51906558E00BE1895 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		3C1445A61906558E00BE1895 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		3C1445A81906558E00BE1895 /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
@@ -130,8 +123,6 @@
 		3C2E13F519075BE800CB740E /* MessageWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageWindow.xib; sourceTree = "<group>"; };
 		3C2E13FB190763D800CB740E /* MessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageView.h; sourceTree = "<group>"; };
 		3C2E13FC190763D800CB740E /* MessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageView.m; sourceTree = "<group>"; };
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 		6232C20D19017AC200D57876 /* MemeberListWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemeberListWindow.xib; sourceTree = "<group>"; };
 		6232C21319017D8200D57876 /* MemberListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberListController.h; sourceTree = "<group>"; };
 		6232C21419017D8200D57876 /* MemberListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListController.m; sourceTree = "<group>"; };
@@ -152,11 +143,9 @@
 		64CD0451027F05C200C69EE8 /* LogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogManager.m; sourceTree = "<group>"; };
 		64DAAE0B02A0BDE2001FC8E1 /* RetryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetryInfo.h; sourceTree = "<group>"; };
 		64DAAE0C02A0BDE2001FC8E1 /* RetryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetryInfo.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		E825D777190E503A00828A95 /* AttachTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachTableViewDelegate.h; sourceTree = "<group>"; };
 		E825D778190E503A00828A95 /* AttachTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachTableViewDelegate.m; sourceTree = "<group>"; };
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
+
 		F51E8DF20326721501A80003 /* AttachmentServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentServer.h; sourceTree = "<group>"; };
 		F51E8DF30326721501A80003 /* AttachmentServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachmentServer.m; sourceTree = "<group>"; };
 		F51E8DF6032673F001A80003 /* Attachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attachment.h; sourceTree = "<group>"; };
@@ -250,10 +239,7 @@
 		080E96DDFE201D6D7F000001 /* src */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				3C1445A41906558E00BE1895 /* CoreData */,
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 				64253EAE026818A200A0FC6F /* Application */,
 				F5269D4F020433CA01A86403 /* User */,
 				F5269D4402041BF801A86403 /* Message */,
@@ -326,7 +312,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		3C1445A41906558E00BE1895 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,8 +322,7 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
+
 		64253EAE026818A200A0FC6F /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,11 +347,9 @@
 				F51E8DF30326721501A80003 /* AttachmentServer.m */,
 				F53330EF0369A757012E428F /* AttachmentClient.h */,
 				F53330F00369A757012E428F /* AttachmentClient.m */,
-<<<<<<< HEAD
 				E825D777190E503A00828A95 /* AttachTableViewDelegate.h */,
 				E825D778190E503A00828A95 /* AttachTableViewDelegate.m */,
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
+
 			);
 			name = Attachment;
 			sourceTree = "<group>";
@@ -399,11 +381,8 @@
 				F77D69631397A95B00BA58D6 /* SendHeaderView.m */,
 				6232C21319017D8200D57876 /* MemberListController.h */,
 				6232C21419017D8200D57876 /* MemberListController.m */,
-<<<<<<< HEAD
 				3C2E13FB190763D800CB740E /* MessageView.h */,
 				3C2E13FC190763D800CB740E /* MessageView.m */,
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -474,10 +453,7 @@
 				F7E66CC11361ABBA0014B3D7 /* MainMenu.nib */,
 				F794E5B913855BCC003FB780 /* LogConvertDialog.xib */,
 				6232C20D19017AC200D57876 /* MemeberListWindow.xib */,
-<<<<<<< HEAD
 				3C2E13F519075BE800CB740E /* MessageWindow.xib */,
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 			);
 			name = Nibs;
 			sourceTree = "<group>";
@@ -503,10 +479,7 @@
 				F734531A0C454622001D5375 /* SendControl.h in Headers */,
 				F734531B0C454622001D5375 /* AppControl.h in Headers */,
 				F734531C0C454622001D5375 /* NoticeControl.h in Headers */,
-<<<<<<< HEAD
 				3C2E13FD190763D800CB740E /* MessageView.h in Headers */,
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 				F734531D0C454622001D5375 /* MessageCenter.h in Headers */,
 				6232C21519017D8200D57876 /* MemberListController.h in Headers */,
 				F734531E0C454622001D5375 /* UserInfo.h in Headers */,
@@ -526,18 +499,12 @@
 				F734532C0C454622001D5375 /* Attachment.h in Headers */,
 				F734532D0C454622001D5375 /* DebugLog.h in Headers */,
 				F734532F0C454622001D5375 /* AttachmentClient.h in Headers */,
-<<<<<<< HEAD
 				3C1445AA1906558E00BE1895 /* Message.h in Headers */,
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 				F73453300C454622001D5375 /* IPMessenger.h in Headers */,
 				F73453310C454622001D5375 /* NSStringIPMessenger.h in Headers */,
 				F73453320C454622001D5375 /* AttachStatusControl.h in Headers */,
 				F73453330C454622001D5375 /* AttachmentFile.h in Headers */,
-<<<<<<< HEAD
 				E825D779190E503A00828A95 /* AttachTableViewDelegate.h in Headers */,
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 				F73453350C454622001D5375 /* RecvMessage.h in Headers */,
 				F7BC02BD1382522900EDBC81 /* LogConverter.h in Headers */,
 				F7196E9013842A5300BE747B /* LogConvertController.h in Headers */,
@@ -619,10 +586,7 @@
 				F7E66CD11361ABC80014B3D7 /* ReceiveWindow.nib in Resources */,
 				F7E66CD21361ABC80014B3D7 /* SendWindow.nib in Resources */,
 				F794E5BA13855BCC003FB780 /* LogConvertDialog.xib in Resources */,
-<<<<<<< HEAD
 				3C2E13F619075BE800CB740E /* MessageWindow.xib in Resources */,
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 				F7C81E72138D7A2E00E329B5 /* Acknowledgement.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -643,19 +607,13 @@
 				F734534D0C454622001D5375 /* UserManager.m in Sources */,
 				F734534E0C454622001D5375 /* ReceiveControl.m in Sources */,
 				F734534F0C454622001D5375 /* SendMessage.m in Sources */,
-<<<<<<< HEAD
 				3C2E13FE190763D800CB740E /* MessageView.m in Sources */,
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 				F73453500C454622001D5375 /* Config.m in Sources */,
 				F73453510C454622001D5375 /* PrefControl.m in Sources */,
 				F73453520C454622001D5375 /* LogManager.m in Sources */,
 				F73453530C454622001D5375 /* RetryInfo.m in Sources */,
 				F73453540C454622001D5375 /* RefuseInfo.m in Sources */,
-<<<<<<< HEAD
 				3C1445AB1906558E00BE1895 /* Message.m in Sources */,
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 				F73453550C454622001D5375 /* WindowManager.m in Sources */,
 				F73453560C454622001D5375 /* ReceiveMessageView.m in Sources */,
 				F73453570C454622001D5375 /* SendMessageView.m in Sources */,
@@ -668,18 +626,12 @@
 				F734535F0C454622001D5375 /* AttachStatusControl.m in Sources */,
 				F73453600C454622001D5375 /* AttachmentFile.m in Sources */,
 				F73453620C454622001D5375 /* RecvMessage.m in Sources */,
-<<<<<<< HEAD
 				3C1445AC1906558E00BE1895 /* Model.xcdatamodeld in Sources */,
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 				F7BC02BE1382522900EDBC81 /* LogConverter.m in Sources */,
 				F7196E9113842A5300BE747B /* LogConvertController.m in Sources */,
 				F77D69651397A95B00BA58D6 /* SendHeaderView.m in Sources */,
 				6232C21619017D8200D57876 /* MemberListController.m in Sources */,
-<<<<<<< HEAD
 				E825D77A190E503A00828A95 /* AttachTableViewDelegate.m in Sources */,
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,7 +799,6 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
-<<<<<<< HEAD
 
 /* Begin XCVersionGroup section */
 		3C1445A71906558E00BE1895 /* Model.xcdatamodeld */ = {
@@ -862,8 +813,6 @@
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 	};
 	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }

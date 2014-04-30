@@ -26,10 +26,7 @@
 #import "AttachmentFile.h"
 #import "NSStringIPMessenger.h"
 #import	"DebugLog.h"
-<<<<<<< HEAD
 #import "MemberListController.h"
-=======
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
 
 // UNIXソケット関連
 #include <unistd.h>
@@ -769,12 +766,9 @@ static void _DynamicStoreCallback(SCDynamicStoreRef	store,
 						data:[self entryMessageData]];
 			}
 		}
-<<<<<<< HEAD
 //		[[NSApp delegate] receiveMessage:msg];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"RecvMessage" object:msg];
-=======
-		[[NSApp delegate] receiveMessage:msg];
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
+
 		break;
 	case IPMSG_RECVMSG:		// メッセージ受信確認パケット
 		// 応答待ちメッセージ一覧から受信したメッセージのエントリを削除

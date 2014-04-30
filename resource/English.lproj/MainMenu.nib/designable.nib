@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment version="1050" defaultVersion="1070" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
-=======
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
-    <dependencies>
-        <deployment version="1050" defaultVersion="1050" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -378,11 +371,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="616" y="333" width="489" height="361"/>
-<<<<<<< HEAD
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
-=======
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
             <value key="minSize" type="size" width="489" height="361"/>
             <view key="contentView" id="254">
                 <rect key="frame" x="0.0" y="0.0" width="489" height="361"/>
@@ -394,19 +383,11 @@
                         <tabViewItems>
                             <tabViewItem label="General" identifier="general" id="258">
                                 <view key="view" id="248">
-<<<<<<< HEAD
                                     <rect key="frame" x="10" y="29" width="489" height="312"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField verticalHuggingPriority="750" id="252">
                                             <rect key="frame" x="13" y="272" width="82" height="17"/>
-=======
-                                    <rect key="frame" x="10" y="25" width="489" height="316"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <textField verticalHuggingPriority="750" id="252">
-                                            <rect key="frame" x="13" y="276" width="82" height="17"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="User :" id="1197">
                                                 <font key="font" metaFont="system"/>
@@ -415,11 +396,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" id="301">
-<<<<<<< HEAD
                                             <rect key="frame" x="13" y="231" width="82" height="17"/>
-=======
-                                            <rect key="frame" x="13" y="235" width="82" height="17"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Group :" id="1199">
                                                 <font key="font" metaFont="system"/>
@@ -428,11 +405,8 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" id="282">
-<<<<<<< HEAD
                                             <rect key="frame" x="100" y="270" width="369" height="22"/>
-=======
-                                            <rect key="frame" x="100" y="274" width="369" height="22"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
+
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="1198">
                                                 <font key="font" metaFont="system"/>
@@ -444,11 +418,7 @@
                                             </connections>
                                         </textField>
                                         <button verticalHuggingPriority="750" id="244">
-<<<<<<< HEAD
                                             <rect key="frame" x="158" y="176" width="173" height="32"/>
-=======
-                                            <rect key="frame" x="158" y="180" width="173" height="32"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Password Setting..." bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="1196">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -459,11 +429,7 @@
                                             </connections>
                                         </button>
                                         <textField verticalHuggingPriority="750" id="582">
-<<<<<<< HEAD
                                             <rect key="frame" x="100" y="229" width="369" height="22"/>
-=======
-                                            <rect key="frame" x="100" y="233" width="369" height="22"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="1200">
                                                 <font key="font" metaFont="system"/>
@@ -475,11 +441,7 @@
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" id="705">
-<<<<<<< HEAD
                                             <rect key="frame" x="111" y="255" width="188" height="14"/>
-=======
-                                            <rect key="frame" x="111" y="259" width="188" height="14"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Do not use ( : ) or reserved characters" id="1201">
                                                 <font key="font" metaFont="label"/>
@@ -488,11 +450,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" id="706">
-<<<<<<< HEAD
                                             <rect key="frame" x="111" y="214" width="188" height="14"/>
-=======
-                                            <rect key="frame" x="111" y="218" width="188" height="14"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Do not use ( : ) or reserved characters" id="1202">
                                                 <font key="font" metaFont="label"/>
@@ -501,11 +459,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <button id="1056">
-<<<<<<< HEAD
                                             <rect key="frame" x="14" y="123" width="181" height="18"/>
-=======
-                                            <rect key="frame" x="14" y="127" width="181" height="18"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Show icon in menu bar" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="1210">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -612,11 +566,7 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <popUpButtonCell key="cell" type="push" title="None" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="253" id="1179">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-<<<<<<< HEAD
                                                 <font key="font" metaFont="menu"/>
-=======
-                                                <font key="font" metaFont="system"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                                 <menu key="menu" title="OtherViews" id="292">
                                                     <items>
                                                         <menuItem title="None" state="on" id="253"/>
@@ -1131,12 +1081,9 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="1157">
                                                             <font key="font" metaFont="smallSystem"/>
-<<<<<<< HEAD
                                                             <string key="title">If the following conditions are met, user is not displayed in the user list.
 You are not displayed on the other user's list, either.</string>
-=======
-                                                            <string key="title">If the following conditions are met, user is not displayed in the user list.You are not displayed on the other user's list, either.</string>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
+
                                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
@@ -1376,11 +1323,7 @@ will force the update check.</string>
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="494" y="464" width="454" height="184"/>
-<<<<<<< HEAD
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
-=======
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
             <value key="minSize" type="size" width="264" height="137"/>
             <view key="contentView" id="341">
                 <rect key="frame" x="0.0" y="0.0" width="454" height="184"/>
@@ -1512,11 +1455,7 @@ DQ
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="457" y="521" width="471" height="192"/>
-<<<<<<< HEAD
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
-=======
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
             <value key="minSize" type="size" width="471" height="185"/>
             <view key="contentView" id="364">
                 <rect key="frame" x="0.0" y="0.0" width="471" height="192"/>
@@ -1647,11 +1586,7 @@ DQ
             <windowStyleMask key="styleMask" titled="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="145" y="298" width="446" height="286"/>
-<<<<<<< HEAD
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
-=======
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
             <value key="minSize" type="size" width="446" height="286"/>
             <view key="contentView" id="376">
                 <rect key="frame" x="0.0" y="0.0" width="446" height="286"/>
@@ -1778,11 +1713,7 @@ Gw
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="258" y="321" width="552" height="135"/>
-<<<<<<< HEAD
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
-=======
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
             <value key="minSize" type="size" width="550" height="135"/>
             <view key="contentView" id="383">
                 <rect key="frame" x="0.0" y="0.0" width="552" height="135"/>
@@ -1825,11 +1756,7 @@ Gw
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <popUpButtonCell key="cell" type="push" title="User" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="393" id="1242">
                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-<<<<<<< HEAD
                                         <font key="font" metaFont="menu"/>
-=======
-                                        <font key="font" metaFont="system"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                         <menu key="menu" title="OtherViews" id="387">
                                             <items>
                                                 <menuItem title="User" state="on" id="393"/>
@@ -1855,11 +1782,7 @@ Gw
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                     <popUpButtonCell key="cell" type="push" title="Matches" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="396" id="1241">
                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-<<<<<<< HEAD
                                         <font key="font" metaFont="menu"/>
-=======
-                                        <font key="font" metaFont="system"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                                         <menu key="menu" title="OtherViews" id="379">
                                             <items>
                                                 <menuItem title="Matches" state="on" id="396"/>
@@ -1972,11 +1895,7 @@ Gw
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="21" y="46" width="270" height="160"/>
-<<<<<<< HEAD
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
-=======
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
             <value key="minSize" type="size" width="200" height="120"/>
             <view key="contentView" id="1001">
                 <rect key="frame" x="0.0" y="0.0" width="270" height="160"/>
@@ -1987,11 +1906,7 @@ Gw
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" id="tbJ-yW-FWu">
                             <rect key="frame" x="1" y="1" width="259" height="122"/>
-<<<<<<< HEAD
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-=======
-                            <autoresizingMask key="autoresizingMask"/>
->>>>>>> e2273de20342b81f29221e3fd09a2dfabb8f0755
                             <subviews>
                                 <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="14" indentationPerLevel="16" autoresizesOutlineColumn="YES" outlineTableColumn="1005" id="1002">
                                     <rect key="frame" x="0.0" y="0.0" width="259" height="122"/>
