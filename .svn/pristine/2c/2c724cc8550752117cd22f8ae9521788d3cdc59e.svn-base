@@ -1,0 +1,53 @@
+//
+//  MessageView.h
+//  IPMessenger
+//
+//  Created by ZhanHongjin on 14-4-23.
+//
+//
+#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
+#import "RecvMessage.h"
+#import "SendMessageView.h"
+#import "SendMessage.h"
+#import "UserInfo.h"
+#import "Config.h"
+#import "MessageCenter.h"
+#import "LogManager.h"
+#import "Message.h"
+
+@interface MessageView : NSObject<NSTextViewDelegate>{
+    NSTextView *editTextView;
+    NSTextView *historyTextView;
+    NSWindow *window;
+    UserInfo * info;
+    NSTextView *sendedTextView;
+    UserInfo * selfInfo;
+    
+    NSManagedObjectModel *managedObjectModel;
+    NSManagedObjectContext *managedObjectContext;
+    NSPersistentStoreCoordinator *persistentStoreCoordinator;
+    NSButtonCell *hisrotyButtonAction;
+}
+-(void)initWindow;
+
+@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSTextView *sendedTextView;
+@property (assign) IBOutlet NSTextView *editTextView;
+@property (assign) IBOutlet NSTextView *historyTextView;
+
+- (IBAction)sendButtonAction:(id)sender;
+@property (assign) IBOutlet NSButtonCell *hisrotyButtonAction;
+- (IBAction)histotyAction:(id)sender;
+
+@property (nonatomic,strong)UserInfo * info;
+@property (nonatomic,strong)UserInfo * selfInfo;
+
+- (void)receiveMessage:(RecvMessage *)msg;
+- (NSString *)loadRecordWithNumber:(int)historyNumber;
+
+@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+@end

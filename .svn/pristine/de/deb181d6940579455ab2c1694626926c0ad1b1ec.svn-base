@@ -1,0 +1,109 @@
+//
+//  MessageView.h
+//  IPMessenger
+//
+//  Created by ZhanHongjin on 14-4-23.
+//
+//
+#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
+#import "RecvMessage.h"
+#import "SendMessageView.h"
+#import "SendMessage.h"
+#import "UserInfo.h"
+#import "Config.h"
+#import "MessageCenter.h"
+#import "LogManager.h"
+#import "Message.h"
+#import "AttachmentClient.h"
+
+
+@interface MessageView : NSObject<AttachmentClientListener ,NSTextViewDelegate,NSTableViewDataSource,NSTableViewDelegate>{
+    NSTextView *editTextView;
+    NSTextView *historyTextView;
+    
+    NSView *attachList;
+    NSDrawer *attachDrawer;
+    NSMutableArray *infos;
+    NSWindow *window;
+    UserInfo * info;
+    UserInfo * selfInfo;
+    NSArray *attachArr;
+    
+    IBOutlet NSTableView *attachTable;
+    IBOutlet NSPanel *attachSheet;
+    IBOutlet NSTextField *attachSheetTitleLabel;
+    IBOutlet NSTextField *attachSheetFileNameLabel;
+    IBOutlet NSProgressIndicator *attachSheetProgress;
+    IBOutlet NSTextField *attachSheetPercentageLabel;
+    IBOutlet NSTextField *attachSheetFileNumLabel;
+    IBOutlet NSTextField *attachSheetSpeedLabel;
+    IBOutlet NSTextField *attachSheetSizeLabel;
+    IBOutlet NSTextField *attachSheetDirNumLabel;
+    IBOutlet NSButton *attachSheetCancelButton;
+    IBOutlet NSButton *attachSaveButton;
+    AttachmentClient*				downloader;
+    RecvMessage*					recvMsg;
+    
+    NSTimer*						attachSheetRefreshTimer;	// ダウンロードシート更新タイマ
+	BOOL							attachSheetRefreshFileName;	// ダウンロードシード更新フラグ
+	BOOL							attachSheetRefreshPercentage;
+	BOOL							attachSheetRefreshTitle;
+	BOOL							attachSheetRefreshFileNum;
+	BOOL							attachSheetRefreshDirNum;
+	BOOL							attachSheetRefreshSize;
+
+    NSManagedObjectModel *managedObjectModel;
+    NSManagedObjectContext *managedObjectContext;
+    NSPersistentStoreCoordinator *persistentStoreCoordinator;
+    NSButtonCell *hisrotyButtonAction;
+    NSTableView *tableView;
+    NSInteger cellNumber;
+    NSMutableArray * sendedArray;
+
+
+
+    NSInteger pageNumber;
+    NSInteger historyCount;
+    
+}
+-(void)initWindowWithReceiveMessage:(RecvMessage *)msg;
+@property (assign) IBOutlet NSTableView *tableView;
+@property (assign) NSArray *attachArr;
+@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSTextView *editTextView;
+@property (assign) IBOutlet NSTextView *historyTextView;
+@property (assign) IBOutlet NSView *attachList;
+@property (assign) IBOutlet NSDrawer *attachDrawer;
+@property (assign) IBOutlet NSButtonCell *hisrotyButtonAction;
+- (IBAction)downloadBtnPress:(id)sender;
+
+@property (assign) NSMutableArray *infos;
+@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+
+- (IBAction)sendButtonAction:(id)sender;
+- (IBAction)histotyAction:(id)sender;
+- (void)receiveMessage:(RecvMessage *)msg;
+- (NSString *)loadRecordWithNumber:(int)historyNumber;
+
+@property (nonatomic,strong)UserInfo * info;
+@property (nonatomic,strong)UserInfo * selfInfo;
+
+
+
+@property (nonatomic,assign)NSInteger cellNumber;
+@property (nonatomic,strong)NSMutableArray * sendedArray;
+
+@property (nonatomic,assign)NSInteger pageNumber;
+@property (nonatomic,assign)NSInteger historyCount;
+
+- (IBAction)leftTopAction:(id)sender;
+- (IBAction)leftAction:(id)sender;
+- (IBAction)rightAction:(id)sender;
+- (IBAction)rightTopAction:(id)sender;
+
+
+@end
